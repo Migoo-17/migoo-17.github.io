@@ -1,0 +1,934 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Salaty Privacy Policy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+
+<style>
+  :root {
+    --ground: #F8FBF9;
+    --surface: #FFFFFF;
+    --ink: #18221B;
+    --muted: #6B746E;
+    --line: #DDE3DF;
+    --accent: #397852;
+    --accent-ink: #2C5E40;
+    --accent-soft: #E2F4E7;
+    --deep: #1A2E21;
+    --deep-text: #F1F7F3;
+    --deep-line: #36473B;
+    --flag-bg: #FBEDD5;
+    --flag-ink: #6B4A02;
+    --flag-line: #E4C787;
+    --sel: #CDE9D6;
+
+    --measure: 68ch;
+    --display: "Fraunces", "Iowan Old Style", Georgia, serif;
+    --body: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #0B110D;
+      --surface: #161D18;
+      --ink: #EBF0ED;
+      --muted: #8C958E;
+      --line: #262D28;
+      --accent: #6EBF8C;
+      --accent-ink: #8FD0A6;
+      --accent-soft: #182F20;
+      --deep: #101711;
+      --deep-text: #EBF0ED;
+      --deep-line: #2D3931;
+      --flag-bg: #2A2212;
+      --flag-ink: #E7C787;
+      --flag-line: #574a24;
+      --sel: #1F3A29;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --ground: #0B110D;
+    --surface: #161D18;
+    --ink: #EBF0ED;
+    --muted: #8C958E;
+    --line: #262D28;
+    --accent: #6EBF8C;
+    --accent-ink: #8FD0A6;
+    --accent-soft: #182F20;
+    --deep: #101711;
+    --deep-text: #EBF0ED;
+    --deep-line: #2D3931;
+    --flag-bg: #2A2212;
+    --flag-ink: #E7C787;
+    --flag-line: #574a24;
+    --sel: #1F3A29;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: 17px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection { background: var(--sel); color: var(--ink); }
+
+  a {
+    color: var(--accent-ink);
+    text-decoration-color: color-mix(in srgb, var(--accent) 45%, transparent);
+    text-underline-offset: 2px;
+  }
+  a:hover { text-decoration-color: var(--accent); }
+
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  /* ---------- Back bar ---------- */
+  .backbar {
+    background: var(--deep);
+    border-bottom: 1px solid var(--deep-line);
+  }
+  .backbar .wrap {
+    max-width: 62rem;
+    margin: 0 auto;
+    padding: 0.8rem 1.5rem;
+    display: flex;
+    gap: 1.5rem;
+    font-family: var(--mono);
+    font-size: 0.8rem;
+  }
+  .backbar a {
+    color: color-mix(in srgb, var(--deep-text) 78%, transparent);
+    text-decoration: none;
+  }
+  .backbar a:hover { color: var(--deep-text); }
+
+  /* ---------- Masthead ---------- */
+  .masthead {
+    background: var(--deep);
+    color: var(--deep-text);
+    padding: clamp(2.5rem, 6vw, 4.5rem) 1.5rem clamp(2rem, 4vw, 3rem);
+    border-bottom: 3px solid transparent;
+    border-image: repeating-linear-gradient(
+      -45deg, var(--accent) 0 10px, color-mix(in srgb, var(--accent) 55%, var(--deep)) 10px 20px
+    ) 3;
+  }
+  .masthead-inner {
+    max-width: 62rem;
+    margin: 0 auto;
+  }
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: color-mix(in srgb, var(--deep-text) 68%, transparent);
+    margin: 0 0 1.1rem;
+  }
+  .wordmark {
+    font-family: var(--display);
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: clamp(2.6rem, 8vw, 4.25rem);
+    line-height: 0.98;
+    letter-spacing: -0.02em;
+    margin: 0;
+    text-wrap: balance;
+  }
+  .wordmark span { color: color-mix(in srgb, var(--deep-text) 55%, var(--accent)); }
+  .promise {
+    font-family: var(--display);
+    font-style: italic;
+    font-weight: 400;
+    font-size: clamp(1.05rem, 2.4vw, 1.3rem);
+    color: color-mix(in srgb, var(--deep-text) 82%, transparent);
+    margin: 1rem 0 0;
+    max-width: 34ch;
+  }
+  .dateline {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 2rem;
+    margin-top: 1.9rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid var(--deep-line);
+    font-family: var(--mono);
+    font-size: 0.8rem;
+    color: color-mix(in srgb, var(--deep-text) 72%, transparent);
+  }
+  .dateline b { color: var(--deep-text); font-weight: 500; }
+
+  /* ---------- Draft banner ---------- */
+  .draft {
+    max-width: 62rem;
+    margin: 1.5rem auto 0;
+    padding: 0.85rem 1.15rem;
+    background: var(--flag-bg);
+    color: var(--flag-ink);
+    border: 1px solid var(--flag-line);
+    border-radius: 8px;
+    font-size: 0.86rem;
+    line-height: 1.5;
+  }
+  .draft b { font-weight: 600; }
+  .draft code {
+    font-family: var(--mono);
+    font-size: 0.82em;
+    background: color-mix(in srgb, var(--flag-ink) 12%, transparent);
+    padding: 0.05em 0.35em;
+    border-radius: 3px;
+  }
+
+  /* ---------- Layout ---------- */
+  .wrap {
+    max-width: 62rem;
+    margin: 0 auto;
+    padding: clamp(2rem, 5vw, 3.5rem) 1.5rem 4rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  @media (min-width: 60rem) {
+    .wrap { grid-template-columns: 15rem 1fr; gap: 3.5rem; align-items: start; }
+    .toc { position: sticky; top: 1.5rem; }
+  }
+
+  /* ---------- TOC ---------- */
+  .toc h2 {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 0.9rem;
+    font-weight: 500;
+  }
+  .toc ol { list-style: none; margin: 0; padding: 0; counter-reset: toc; }
+  .toc li { margin: 0; }
+  .toc > ol > li { counter-increment: toc; }
+  .toc > ol > li > a::before {
+    content: counter(toc);
+    font-family: var(--mono);
+    font-size: 0.72em;
+    color: var(--accent-ink);
+    margin-right: 0.6em;
+  }
+  .toc a {
+    display: block;
+    padding: 0.32rem 0;
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 0.9rem;
+    line-height: 1.35;
+    border-bottom: 1px solid transparent;
+  }
+  .toc a:hover { color: var(--ink); }
+  .toc .sub { padding-left: 1.6rem; }
+  .toc .sub a { font-size: 0.83rem; padding: 0.2rem 0; }
+
+  /* ---------- Document body ---------- */
+  .doc { min-width: 0; max-width: var(--measure); }
+  .doc > section { margin-bottom: 3rem; scroll-margin-top: 1.5rem; }
+  .doc > section:last-child { margin-bottom: 0; }
+
+  .doc h2 {
+    font-family: var(--display);
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: clamp(1.5rem, 3.5vw, 1.95rem);
+    line-height: 1.15;
+    letter-spacing: -0.015em;
+    margin: 0 0 1rem;
+    text-wrap: balance;
+    display: flex;
+    gap: 0.7em;
+    align-items: baseline;
+  }
+  .doc h2 .num {
+    font-family: var(--mono);
+    font-weight: 500;
+    font-size: 0.62em;
+    color: var(--accent-ink);
+    flex: none;
+  }
+  .doc h3 {
+    font-family: var(--body);
+    font-weight: 600;
+    font-size: 1.05rem;
+    letter-spacing: 0.01em;
+    margin: 2rem 0 0.6rem;
+    color: var(--ink);
+  }
+  .doc h3 .tag {
+    font-family: var(--mono);
+    font-weight: 400;
+    font-size: 0.72rem;
+    color: var(--muted);
+    margin-right: 0.5em;
+  }
+  .doc p { margin: 0 0 1rem; }
+  .doc ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  .doc li { margin: 0 0 0.5rem; padding-left: 0.2rem; }
+  .doc li::marker { color: var(--accent); }
+  .doc strong { font-weight: 600; }
+  .lead {
+    font-size: 1.12rem;
+    color: color-mix(in srgb, var(--ink) 88%, var(--muted));
+  }
+
+  /* ---------- Short version panel ---------- */
+  .summary {
+    background: var(--accent-soft);
+    border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent);
+    border-radius: 12px;
+    padding: 1.5rem 1.6rem 1.2rem;
+    margin-bottom: 3rem;
+  }
+  .summary h2 {
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin: 0 0 0.9rem;
+    color: var(--accent-ink);
+  }
+  .summary ul { margin: 0; padding-left: 1.15rem; }
+  .summary li { margin-bottom: 0.55rem; }
+  .summary li::marker { content: "\2713  "; color: var(--accent); }
+
+  /* ---------- Glance table ---------- */
+  .table-scroll { overflow-x: auto; margin: 0 0 1rem; -webkit-overflow-scrolling: touch; }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 34rem;
+    font-size: 0.9rem;
+  }
+  caption {
+    text-align: left;
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    padding-bottom: 0.7rem;
+  }
+  th, td {
+    text-align: left;
+    padding: 0.7rem 0.9rem;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  thead th {
+    font-family: var(--mono);
+    font-weight: 500;
+    font-size: 0.72rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--muted);
+    border-bottom: 1.5px solid var(--accent);
+  }
+  tbody th { font-weight: 600; font-family: var(--body); }
+  tbody tr:last-child th, tbody tr:last-child td { border-bottom: none; }
+  .yes { color: var(--accent-ink); font-weight: 600; }
+  .no { color: var(--muted); }
+
+  /* ---------- Callout ---------- */
+  .note {
+    border-left: 3px solid var(--accent);
+    background: color-mix(in srgb, var(--accent-soft) 55%, transparent);
+    padding: 0.9rem 1.1rem;
+    margin: 1.4rem 0;
+    border-radius: 0 8px 8px 0;
+    font-size: 0.94rem;
+  }
+  .note p { margin: 0; }
+  .note p + p { margin-top: 0.6rem; }
+  .note b { color: var(--accent-ink); }
+
+  /* ---------- Placeholder marks ---------- */
+  mark.ph {
+    background: var(--flag-bg);
+    color: var(--flag-ink);
+    border-bottom: 1px solid var(--flag-line);
+    padding: 0.02em 0.3em;
+    border-radius: 2px;
+    font-family: var(--mono);
+    font-size: 0.86em;
+  }
+
+  /* ---------- Contact ---------- */
+  .contact {
+    font-family: var(--mono);
+    font-size: 0.9rem;
+    line-height: 1.9;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 1.2rem 1.4rem;
+  }
+  .contact div { display: flex; gap: 1rem; }
+  .contact span:first-child {
+    color: var(--muted);
+    min-width: 6.5rem;
+    flex: none;
+  }
+
+  footer {
+    max-width: 62rem;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 3.5rem;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.82rem;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    html { scroll-behavior: smooth; }
+  }
+
+  @media print {
+    .toc, .draft, .masthead, .backbar { break-inside: avoid; }
+    body { font-size: 11pt; background: #fff; color: #000; }
+    .wrap { display: block; max-width: none; }
+    .masthead { background: #fff; color: #000; border-image: none; border-bottom: 2px solid #000; }
+    .wordmark span, .promise, .eyebrow, .dateline { color: #000; }
+    a { color: #000; text-decoration: underline; }
+    .doc > section { break-inside: avoid-page; }
+    .backbar { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="backbar">
+  <div class="wrap"><a href="/">Magdy El-Temamy</a><a href="./">← Back to Salaty</a></div>
+</div>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <p class="eyebrow">Privacy Policy</p>
+    <h1 class="wordmark">Salaty<span>.</span></h1>
+    <p class="promise">Private by default. You choose what to share.</p>
+    <div class="dateline">
+      <span>Effective&nbsp;<b><mark class="ph">DD Month 2026</mark></b></span>
+      <span>Last updated&nbsp;<b><mark class="ph">DD Month 2026</mark></b></span>
+      <span>Version&nbsp;<b>1.0</b></span>
+    </div>
+  </div>
+</header>
+
+<div class="draft">
+  <b>Draft — not yet publishable.</b> Replace every highlighted <code>placeholder</code> with your real
+  details (legal / developer name, hosting region, cross-border safeguard, children's age threshold,
+  in-app deletion route, PostHog region + config, push provider + triggers, analytics retention),
+  have it reviewed against the Apple App Privacy and Google Play Data safety forms, then ask to have
+  this banner removed before you submit the link to the stores.
+</div>
+
+<div class="wrap">
+  <nav class="toc" aria-label="Contents">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#who">Who we are</a></li>
+      <li><a href="#collect">Information Salaty collects</a>
+        <ol class="sub">
+          <li><a href="#account">Account</a></li>
+          <li><a href="#activity">Prayer activity &amp; excused periods</a></li>
+          <li><a href="#location">Location</a></li>
+          <li><a href="#motion">Device motion sensors</a></li>
+          <li><a href="#circles">Circles</a></li>
+          <li><a href="#ads">Advertising</a></li>
+          <li><a href="#analytics">Product analytics</a></li>
+          <li><a href="#push">Push notifications</a></li>
+          <li><a href="#updates">App updates</a></li>
+          <li><a href="#network">Fonts &amp; network requests</a></li>
+        </ol>
+      </li>
+      <li><a href="#use">How Salaty uses information</a></li>
+      <li><a href="#sharing">Sharing &amp; third-party services</a></li>
+      <li><a href="#never">What Salaty does not do</a></li>
+      <li><a href="#retention">Data retention</a></li>
+      <li><a href="#rights">Your rights &amp; choices</a></li>
+      <li><a href="#security">Security</a></li>
+      <li><a href="#transfers">International data transfers</a></li>
+      <li><a href="#children">Children's privacy</a></li>
+      <li><a href="#changes">Changes to this policy</a></li>
+      <li><a href="#contact">Contact us</a></li>
+    </ol>
+  </nav>
+
+  <main class="doc">
+    <div class="summary">
+      <h2>The short version</h2>
+      <ul>
+        <li>Your prayer record — which prayers you marked, when, and any reason — is stored privately to your account and synced only to <em>your</em> devices.</li>
+        <li>No one, including a circle-mate, can read another person's prayer data. This is enforced in the database itself, not just in the app.</li>
+        <li>Days you mark as excused always count as complete in a circle, so no one can infer a menstrual cycle from your shared week.</li>
+        <li>Sharing with a circle is off until you turn it on, and you pick whether members see day counts only or individual prayers.</li>
+        <li>Your streaks and completion stats are worked out on your device. Salaty also uses privacy-friendly product analytics (PostHog) to see how features are used and fix bugs — never the content of your prayer journal, and never to build an ad profile.</li>
+        <li>Your approximate location (or a city you choose) is used to calculate prayer times and the Qibla, and is sent to a prayer-time service to build your timetable.</li>
+        <li>Salaty shows ads through Google AdMob. Personalized ads run only with your consent.</li>
+      </ul>
+    </div>
+
+    <section id="who">
+      <h2><span class="num">1</span>Who we are</h2>
+      <p class="lead">Salaty is a prayer companion app: prayer times, the Qibla direction, a private
+        prayer journal, and optional small "circles" for praying alongside people you trust.</p>
+      <p>This policy explains what personal information the Salaty mobile app collects, why, who it is
+        shared with, and the choices and rights you have. It applies to the Salaty app on iOS and
+        Android and the backend services that support it.</p>
+      <p>The app is provided by <mark class="ph">[Legal / developer name]</mark>, referred to
+        here as "we", "us", or "Salaty". For any privacy question, contact us at
+        <a href="mailto:magdy.temamy@yahoo.com">magdy.temamy@yahoo.com</a>.</p>
+    </section>
+
+    <section id="collect">
+      <h2><span class="num">2</span>Information Salaty collects</h2>
+      <p>Salaty is designed to collect as little as possible. Most of what the app knows about you
+        stays on your device. The table below is the summary; the subsections that follow give the
+        detail.</p>
+
+      <div class="table-scroll">
+        <table>
+          <caption>Data at a glance</caption>
+          <thead>
+            <tr>
+              <th scope="col">What</th>
+              <th scope="col">Why</th>
+              <th scope="col">Who it reaches</th>
+              <th scope="col">Stored on our servers</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Email &amp; password</th>
+              <td>Create and secure your account</td>
+              <td>Supabase (auth)</td>
+              <td class="yes">Yes — password hashed</td>
+            </tr>
+            <tr>
+              <th scope="row">Name &amp; profile photo</th>
+              <td>Only if you use Sign in with Apple or Google</td>
+              <td>Apple / Google, Supabase</td>
+              <td class="yes">Yes</td>
+            </tr>
+            <tr>
+              <th scope="row">Prayer marks, status &amp; reasons</th>
+              <td>Your prayer journal and statistics</td>
+              <td>Your devices; a circle only if you share</td>
+              <td class="yes">Yes — private to you</td>
+            </tr>
+            <tr>
+              <th scope="row">Excused periods (date ranges)</th>
+              <td>So the journal and stats don't count excused days against you</td>
+              <td>Your devices only</td>
+              <td class="yes">Yes — private to you</td>
+            </tr>
+            <tr>
+              <th scope="row">Approximate location or chosen city</th>
+              <td>Prayer times and Qibla direction</td>
+              <td>Aladhan prayer-time API</td>
+              <td class="no">Only the time zone</td>
+            </tr>
+            <tr>
+              <th scope="row">Device motion / compass</th>
+              <td>Point the Qibla compass</td>
+              <td>No one — on device</td>
+              <td class="no">No</td>
+            </tr>
+            <tr>
+              <th scope="row">Circle membership &amp; shared summary</th>
+              <td>The circles feature</td>
+              <td>Members of your circle</td>
+              <td class="yes">Yes</td>
+            </tr>
+            <tr>
+              <th scope="row">Advertising identifier</th>
+              <td>Personalized ads — with your consent only</td>
+              <td>Google AdMob</td>
+              <td class="no">No — held by Google</td>
+            </tr>
+            <tr>
+              <th scope="row">App version &amp; platform</th>
+              <td>Deliver the correct over-the-air update</td>
+              <td>Shorebird</td>
+              <td class="no">No</td>
+            </tr>
+            <tr>
+              <th scope="row">Usage &amp; crash events</th>
+              <td>See how features are used, fix bugs</td>
+              <td>PostHog</td>
+              <td class="no">No — held by PostHog</td>
+            </tr>
+            <tr>
+              <th scope="row">Push token</th>
+              <td>Deliver circle notifications</td>
+              <td>Push provider, our backend</td>
+              <td class="yes">Yes — device token</td>
+            </tr>
+            <tr>
+              <th scope="row">IP address</th>
+              <td>Inherent to any network request</td>
+              <td>Supabase, Google, Aladhan, PostHog</td>
+              <td class="no">Transient logs only</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 id="account"><span class="tag">2.1</span>Account</h3>
+      <p>You can use prayer times and the Qibla without an account. To keep a prayer journal, sync
+        across devices, or join a circle, you create an account with:</p>
+      <ul>
+        <li><strong>Email address and password</strong> — handled by our authentication provider
+          (Supabase). Your password is stored only as a salted hash; we never see it.</li>
+        <li><strong>Sign in with Apple or Google</strong> — if you choose this instead, the provider
+          gives us a unique identifier, your email address (Apple lets you hide it behind a private
+          relay), and, when available, your display name and profile picture. Apple sends your name
+          only on the first sign-in.</li>
+      </ul>
+      <p>We also store a small profile record: your display name and avatar, the time zone of your
+        prayer-times location, whether you've turned on per-prayer sharing, and whether you've
+        finished onboarding.</p>
+
+      <h3 id="activity"><span class="tag">2.2</span>Prayer activity &amp; excused periods</h3>
+      <p>When you mark a prayer, Salaty records which of the five daily prayers it was, the calendar
+        date it belongs to, whether it was on time, late, or missed, and an optional reason you can
+        add for a missed prayer (traveling, work or school, overslept, forgot). The date is worked
+        out on your device from your local prayer schedule — never from our server clock.</p>
+      <p>You can also mark <strong>excused periods</strong> — date ranges during which prayer is not
+        required (for example menstruation or postnatal bleeding). Salaty stores the start date and,
+        once it ends, the end date.</p>
+      <div class="note">
+        <p><b>This data is treated as sensitive.</b> Prayer logs and excused periods are stored
+          strictly private to your account. No sharing rule anywhere in the system lets another
+          person read them. They are mirrored to your own devices for offline use and synced through
+          your account.</p>
+      </div>
+
+      <h3 id="location"><span class="tag">2.3</span>Location</h3>
+      <p>Prayer times and the Qibla depend on where you are. You can either let the app use your
+        device location or pick a city from a built-in list.</p>
+      <ul>
+        <li>Salaty requests <strong>approximate</strong> location on Android and
+          <strong>while-in-use</strong> location on iOS. It does not request background location.</li>
+        <li>Your coordinates, or the city and country you chose, are sent to the
+          <strong>Aladhan API</strong> (<span style="font-family:var(--mono);font-size:0.9em">api.aladhan.com</span>,
+          operated by the Islamic Network) to calculate your monthly prayer timetable.</li>
+        <li>We store the <strong>time zone</strong> of your prayer-times location on your profile so
+          that circle windows line up correctly across regions. We do not store your precise
+          coordinates on our servers.</li>
+        <li>The Qibla direction is computed on your device from your location and does not leave it.</li>
+      </ul>
+
+      <h3 id="motion"><span class="tag">2.4</span>Device motion sensors</h3>
+      <p>The Qibla compass reads your device's accelerometer and magnetometer to work out which way
+        the device is pointing. This happens entirely on the device in real time. None of it is
+        recorded, transmitted, or stored.</p>
+
+      <h3 id="circles"><span class="tag">2.5</span>Circles</h3>
+      <p>A circle is a small private group — usually one or two people — for praying alongside each
+        other. Circles are entirely optional.</p>
+      <ul>
+        <li>If you create or join one, we store the <strong>circle name</strong>, its
+          <strong>join code</strong>, and your <strong>membership</strong>.</li>
+        <li>Other members can see a <strong>summary of your recent prayer week</strong>: how many days
+          you completed and your counts of on-time, late, and missed prayers over a window (7 days by
+          default). If you turn on <strong>"share which prayers"</strong>, members also see the status
+          of individual prayers by day.</li>
+        <li>Members can send you <strong>nudges</strong> (a note of encouragement, a du'a, or a clap)
+          and create shared <strong>goals</strong>. We store these.</li>
+        <li>Sharing is <strong>off by default</strong>. There are no leaderboards and no ranking.</li>
+      </ul>
+      <div class="note">
+        <p><b>Excused days count as complete.</b> In a circle summary, any day inside an excused
+          period is counted as a full day and never shrinks your visible week — so a circle-mate
+          cannot infer a menstrual cycle from a dip in your activity. Your own private statistics
+          handle excused days correctly and separately.</p>
+        <p><b>Each person's week is measured in their own time zone,</b> so members in different
+          regions see each other fairly rather than permanently "behind".</p>
+      </div>
+
+      <h3 id="ads"><span class="tag">2.6</span>Advertising</h3>
+      <p>Salaty shows ads through <strong>Google AdMob</strong>.</p>
+      <ul>
+        <li>In the EEA, the UK, and Switzerland, Salaty shows a <strong>consent request</strong>
+          before any personalized advertising. On iOS, Salaty also uses Apple's
+          <strong>App Tracking Transparency</strong> prompt.</li>
+        <li>If you <strong>consent</strong>, AdMob may use your device's advertising identifier and
+          device information to show personalized ads and measure them.</li>
+        <li>If you <strong>decline</strong> or are not asked, ads are <strong>non-personalized</strong>
+          — based only on context, not on tracking.</li>
+        <li>You can reset or clear your advertising identifier at any time in your device settings,
+          and re-open the consent choice from <mark class="ph">[Settings location, e.g. Settings &rsaquo; Privacy]</mark>.</li>
+      </ul>
+      <p>Google processes this data as an independent controller under
+        <a href="https://policies.google.com/technologies/partner-sites">Google's Privacy Policy</a>
+        and its <a href="https://support.google.com/admob/answer/6128543">AdMob data-use terms</a>.</p>
+
+      <h3 id="analytics"><span class="tag">2.7</span>Product analytics</h3>
+      <p>To understand which features are used and to find and fix bugs, Salaty uses
+        <strong>PostHog</strong>, a product-analytics service. It records events such as screens
+        opened, actions taken, and errors encountered, together with your app version, device model,
+        operating system, coarse region, and a random analytics identifier for your installation.</p>
+      <ul>
+        <li>Salaty <strong>does not</strong> send the content of your prayer journal — your prayer
+          marks, reasons, or excused periods — to PostHog.</li>
+        <li>Analytics data is processed in <mark class="ph">[PostHog region — EU Cloud / US Cloud /
+          self-hosted]</mark>. <mark class="ph">[Confirm session replay and autocapture are off and
+          that IP addresses are discarded — set in the PostHog project config.]</mark></li>
+        <li>Where the law requires it we ask your consent before analytics, and you can turn
+          analytics off at any time from <mark class="ph">[Settings location]</mark>.</li>
+      </ul>
+      <p>PostHog processes this data as our processor under
+        <a href="https://posthog.com/privacy">PostHog's privacy policy</a>.</p>
+
+      <h3 id="push"><span class="tag">2.8</span>Push notifications</h3>
+      <p>Prayer-time alerts and reminders are scheduled on your device and need no server. Separately,
+        Salaty sends <strong>push notifications</strong> for
+        <mark class="ph">[what triggers a push — e.g. circle nudges, goal updates, a circle-mate
+        joining]</mark>.</p>
+      <ul>
+        <li>To deliver them, your device registers a <strong>push token</strong> with
+          <mark class="ph">[push provider — Apple Push Notification service / Firebase Cloud
+          Messaging / OneSignal]</mark> and with our backend. The token identifies your device
+          installation, not you personally.</li>
+        <li>You can turn push notifications off in your device settings or in the app. Prayer-time
+          reminders keep working either way, because they are local.</li>
+      </ul>
+
+      <h3 id="updates"><span class="tag">2.9</span>App updates</h3>
+      <p>Salaty uses <strong>Shorebird</strong> to deliver small over-the-air code fixes between
+        store releases. When the app checks for an update it sends a non-identifying app identifier,
+        your platform, and the installed version so Shorebird can return the right patch. It does not
+        send any personal data.</p>
+
+      <h3 id="network"><span class="tag">2.10</span>Fonts &amp; network requests</h3>
+      <p>Arabic text is displayed with a typeface loaded at runtime from <strong>Google Fonts</strong>.
+        As with any network request, Google receives your device's IP address when the font is
+        fetched. Every request the app makes — to our backend, the prayer-time API, AdMob, PostHog,
+        the push provider, and Google Fonts — necessarily discloses your IP address to that service
+        and may appear in its transient server logs.</p>
+    </section>
+
+    <section id="use">
+      <h2><span class="num">3</span>How Salaty uses information</h2>
+      <p>We use the information above only to:</p>
+      <ul>
+        <li>calculate and display prayer times and the Qibla direction;</li>
+        <li>keep your prayer journal and sync it across your devices;</li>
+        <li>compute your streaks and completion statistics (on your device);</li>
+        <li>run circles you join — membership, shared summaries, nudges, and goals;</li>
+        <li>schedule prayer-time alerts and reminders locally on your device;</li>
+        <li>send push notifications for circle activity you have turned on;</li>
+        <li>authenticate you and keep your account secure;</li>
+        <li>show ads that fund the app, and request consent where required;</li>
+        <li>understand how features are used and diagnose crashes, through product analytics;</li>
+        <li>deliver app updates and fix problems;</li>
+        <li>comply with legal obligations.</li>
+      </ul>
+      <p>We do <strong>not</strong> use your prayer data for advertising, profiling, or any form of
+        automated decision-making, and we never sell it.</p>
+    </section>
+
+    <section id="sharing">
+      <h2><span class="num">4</span>Sharing &amp; third-party services</h2>
+      <p>We do not sell personal data and we do not share it for cross-context behavioural
+        advertising beyond the AdMob consent described above. We rely on these service providers:</p>
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Service</th>
+              <th scope="col">Role</th>
+              <th scope="col">Data it processes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Supabase</th>
+              <td>Backend database &amp; authentication</td>
+              <td>Account, profile, prayer logs, excused periods, circles</td>
+            </tr>
+            <tr>
+              <th scope="row">Google AdMob (Google LLC)</th>
+              <td>In-app advertising</td>
+              <td>Advertising ID &amp; device info (personalized ads: with consent)</td>
+            </tr>
+            <tr>
+              <th scope="row">Aladhan API (Islamic Network)</th>
+              <td>Prayer-time calculation</td>
+              <td>Approximate coordinates or city / country</td>
+            </tr>
+            <tr>
+              <th scope="row">Shorebird</th>
+              <td>Over-the-air app updates</td>
+              <td>App ID, platform, version, IP address</td>
+            </tr>
+            <tr>
+              <th scope="row">Google Fonts</th>
+              <td>Arabic typeface delivery</td>
+              <td>IP address</td>
+            </tr>
+            <tr>
+              <th scope="row">PostHog</th>
+              <td>Product analytics &amp; crash diagnostics</td>
+              <td>Usage events, app version, device model, coarse region, analytics ID</td>
+            </tr>
+            <tr>
+              <th scope="row"><mark class="ph">[Push provider]</mark></th>
+              <td>Delivering push notifications</td>
+              <td>Push token, notification content, IP address</td>
+            </tr>
+            <tr>
+              <th scope="row">Apple / Google</th>
+              <td>Sign in with Apple / Google (if you use it)</td>
+              <td>Identifier, email, name, photo</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>We may also disclose information if required by law, to enforce our terms, or to protect the
+        rights, safety, or property of our users or the public. If Salaty is involved in a merger or
+        acquisition, we will notify you before your information becomes subject to a different policy.</p>
+    </section>
+
+    <section id="never">
+      <h2><span class="num">5</span>What Salaty does not do</h2>
+      <ul>
+        <li>Your prayer journal — marks, reasons, and excused periods — is never sent to analytics
+          or any other third-party service.</li>
+        <li>No advertising profile is built by Salaty from your prayer data or activity.</li>
+        <li>Salaty's servers store no aggregated statistics of your prayer record; streaks and
+          completion are computed on your device.</li>
+        <li>No sale of personal information, and no "sharing" as defined by California law.</li>
+        <li>No mechanism, anywhere, for one user to read another user's prayer logs or excused
+          periods.</li>
+      </ul>
+    </section>
+
+    <section id="retention">
+      <h2><span class="num">6</span>Data retention</h2>
+      <ul>
+        <li><strong>Prayer logs and excused periods</strong> are kept until you delete them in the
+          app or delete your account. Un-marking a prayer removes it from your journal.</li>
+        <li><strong>Account and profile data</strong> are kept for as long as your account is active.</li>
+        <li><strong>Circle data</strong> — your membership and shared summaries — is retained while
+          you are a member; leaving a circle stops further sharing.</li>
+        <li><strong>Server logs</strong> held by our providers are short-lived and rotated
+          automatically.</li>
+        <li><strong>Analytics events</strong> in PostHog are retained for
+          <mark class="ph">[retention window — PostHog's default is long; set a shorter one in
+          project settings]</mark>, then deleted.</li>
+        <li>When you delete your account, your profile, prayer logs, excused periods, and circle
+          memberships are removed. Copies in routine encrypted backups are overwritten on the normal
+          backup cycle, within <mark class="ph">[30 days]</mark>.</li>
+      </ul>
+      <div class="note">
+        <p><b>Account deletion.</b> To delete your account and everything associated with it, email
+          <a href="mailto:magdy.temamy@yahoo.com?subject=Delete%20my%20Salaty%20account">magdy.temamy@yahoo.com</a>
+          from your account address and we will complete it within 30 days.
+          <mark class="ph">[Replace with the in-app route once Settings &rsaquo; Account &rsaquo;
+          Delete account ships — Apple and Google require an in-app deletion path for apps with
+          accounts.]</mark></p>
+      </div>
+    </section>
+
+    <section id="rights">
+      <h2><span class="num">7</span>Your rights &amp; choices</h2>
+      <p>Depending on where you live, you may have the right to:</p>
+      <ul>
+        <li><strong>Access</strong> the personal data we hold about you and get a copy.</li>
+        <li><strong>Correct</strong> data that is wrong or incomplete.</li>
+        <li><strong>Delete</strong> your data and account.</li>
+        <li><strong>Restrict</strong> or <strong>object to</strong> certain processing.</li>
+        <li><strong>Port</strong> your data to another service.</li>
+        <li><strong>Withdraw consent</strong> for location, product analytics, or personalized ads at
+          any time, without affecting the app's core features.</li>
+      </ul>
+      <p><strong>EEA / UK:</strong> you can lodge a complaint with your local data-protection
+        authority.</p>
+      <p><strong>California:</strong> you have the right to know, delete, and correct your personal
+        information, and to not be discriminated against for exercising these rights. Salaty does not
+        sell or share personal information as those terms are defined by the CCPA/CPRA, so no
+        opt-out is needed.</p>
+      <p>To exercise any of these rights, email
+        <a href="mailto:magdy.temamy@yahoo.com">magdy.temamy@yahoo.com</a>. We will respond within the
+        time your law requires (generally one month). We may need to verify your identity against your
+        account.</p>
+    </section>
+
+    <section id="security">
+      <h2><span class="num">8</span>Security</h2>
+      <ul>
+        <li>All traffic between the app and our services is encrypted with HTTPS / TLS.</li>
+        <li>Every table in our database is protected by row-level access control: your rows are
+          readable only by you. The few cross-user reads that circles need go through vetted
+          server-side functions that enforce the sharing rules themselves.</li>
+        <li>Passwords are stored only as salted hashes by our authentication provider.</li>
+        <li>Circle join codes are drawn from a large random space to resist guessing.</li>
+      </ul>
+      <p>No system is perfectly secure, but we design Salaty so that the most sensitive data is the
+        hardest to reach. If we become aware of a breach affecting your data, we will notify you and
+        the relevant authorities as required by law.</p>
+    </section>
+
+    <section id="transfers">
+      <h2><span class="num">9</span>International data transfers</h2>
+      <p>Our providers may process your data in
+        <mark class="ph">[country / region — e.g. the European Union / the United States]</mark>. Where
+        data is transferred out of the EEA or UK, it is protected by
+        <mark class="ph">[safeguard — e.g. Standard Contractual Clauses / an adequacy decision]</mark>.
+        By using Salaty you understand your information may be processed in these locations.</p>
+    </section>
+
+    <section id="children">
+      <h2><span class="num">10</span>Children's privacy</h2>
+      <p>Salaty is not directed to children under
+        <mark class="ph">[13 / 16 — set per your target markets]</mark> and we do not knowingly
+        collect their personal information. If you believe a child has given us data, contact us and
+        we will delete it.</p>
+    </section>
+
+    <section id="changes">
+      <h2><span class="num">11</span>Changes to this policy</h2>
+      <p>We may update this policy as the app changes or the law requires. When we do, we revise the
+        "last updated" date above. For material changes we will
+        <mark class="ph">[notify you in the app / by email]</mark> before they take effect. Continued
+        use of Salaty after a change means you accept the revised policy.</p>
+    </section>
+
+    <section id="contact">
+      <h2><span class="num">12</span>Contact us</h2>
+      <p>For any question about this policy or your personal data:</p>
+      <div class="contact">
+        <div><span>Provider</span><span><mark class="ph">[Legal / developer name]</mark></span></div>
+        <div><span>Email</span><span><a href="mailto:magdy.temamy@yahoo.com">magdy.temamy@yahoo.com</a></span></div>
+      </div>
+    </section>
+  </main>
+</div>
+
+<footer>
+  Salaty — Privacy Policy · This page is the canonical privacy policy link for the Salaty app on the
+  App Store and Google Play.
+</footer>
+
+</body>
+</html>
